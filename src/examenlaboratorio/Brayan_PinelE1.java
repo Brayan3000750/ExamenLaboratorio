@@ -33,7 +33,7 @@ public static void main(String[] args){
              } else if (opciones == 2) {
                 MayorYPromedio();
             } else if (opciones == 3) {
-                procesarClienteYCanales();
+                Canalesclientes();
             } else if (opciones == 4) {
                 contarVocales();
             } else if (opciones == 5) {
