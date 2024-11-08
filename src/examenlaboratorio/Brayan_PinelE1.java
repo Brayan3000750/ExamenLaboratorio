@@ -31,7 +31,7 @@ public static void main(String[] args){
                 imprimirPiramide(6);
 
              } else if (opciones == 2) {
-                encontrarMayorYPromedio();
+                MayorYPromedio();
             } else if (opciones == 3) {
                 procesarClienteYCanales();
             } else if (opciones == 4) {
@@ -49,12 +49,36 @@ datos.close();
 public static void imprimirPiramide (int filas){
 
 int numero=1;
+for(int x=1;x<=filas;x++){
+int suma=0;
+
+
+
+    
+}
+
+public static void MayorYPromedio(){
+Scanner datos=new Scanner(System.in);
+int max=Integer.MIN_VALUE;
+int sume=0;
+int contar=0;
+
+String respuesta;
+
+System.out.println("Ingrese un numero");
+int num =datos.nextInt();
 
 
 
 
 
 
+
+
+
+
+
+}
 
 
 
