@@ -23,7 +23,7 @@ public static void main(String[] args){
     System.out.println("3. Cliente y Canales");
     System.out.println("4. Contar Vocales");
     System.out.println("5. Salir");
-    System.out.print("Seleccione una opción: ");
+    System.out.print("Seleccione una opcion: ");
             opciones = datos.nextInt();
             datos.nextLine();
 
@@ -35,7 +35,7 @@ public static void main(String[] args){
             } else if (opciones == 3) {
                 Canalesclientes();
             } else if (opciones == 4) {
-                contarVocales();
+                hVocales();
             } else if (opciones == 5) {
                 System.out.println("HASTA LUEGO");
             } else {
@@ -80,7 +80,7 @@ sume += numeros;
             if (numeros > maximo) {
                 maximo = numeros;
             }
-            System.out.print("¿Desea ingresar otro número? (SI/NO): ");
+            System.out.print("¿Desea ingresar otro numero? (SI/NO): ");
             respuesta = datos.next();
         } while (respuesta.equalsIgnoreCase("SI"));
 
@@ -116,7 +116,7 @@ canalesHD++;
 canalesNormales++;
 
 }
- System.out.print("¿Quiere poner otro canal? (SI/NO): ");
+ System.out.print("Quiere poner otro canal? (SI/NO): ");
             respuesta = datos.nextLine();
         } while (respuesta.equalsIgnoreCase("SI"));
 
@@ -140,16 +140,34 @@ System.out.println("Canales HD: "+canalesHD);
 System.out.println("Subtotal: " + subtotal + " Lps");
  System.out.println("Impuesto (15%): " + impuesto + " Lps");
 System.out.println("Total a Pagar: " + pagar + " Lps");
+}
 
+public static void hVocales(){
+    Scanner datos=new Scanner(System.in);
+    String cadenas=datos.nextLine();
+    int contar=0;
+    
+    for (int i = 0; i < cadenas.length(); i++) {
+        char ch = cadenas.charAt(i);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            contar++;
+        }
+    }
 
-
-
+    System.out.println("La cantidad de vocales en minusculas en la cadena son: " + contar);
+}
+    
+    
+    
+    
+    
+    
+    
 }
 
 
 
 
-}
 
 
 
